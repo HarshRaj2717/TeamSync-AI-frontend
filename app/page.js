@@ -30,14 +30,14 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
+          <h2 className={`mb-3 text-xl font-semibold`}>
+          Outreach Team{" "}
             <span className="inline-block transition-transform motion-reduce:transform-none">
             🗹
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+          Empowering outreach through meticulous management and automation.
           </p>
         </a>
 
@@ -47,14 +47,14 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
+          <h2 className={`mb-3 text-xl font-semibold`}>
+            Social Media Team{" "}
             <span className="inline-block transition-transform motion-reduce:transform-none">
               🗹
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          Crafting connections, content, and insights across social platforms.
           </p>
         </a>
 
@@ -64,14 +64,14 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
+          <h2 className={`mb-3 text-xl font-semibold`}>
+            Development Team{" "}
             <span className="inline-block transition-transform motion-reduce:transform-none">
               🗹
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
+          Innovating solutions from planning to coding, driven by AI.
           </p>
         </a>
       </div>
