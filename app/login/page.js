@@ -37,7 +37,7 @@ export default function Login() {
               />
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Login</button>
+              <Link href={"/dashboard"} className="btn btn-primary">Login</Link>
             </div>
             <div className="divider">OR</div>
             <Link className="btn btn-primary btn-outline" href={"/register"}>

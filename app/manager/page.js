@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import "./manager.css";
+import { useSearchParams } from "next/navigation";
 
 function BotMsg({ content }) {
   return (
@@ -33,6 +34,11 @@ function UserMsg({ content }) {
 }
 
 export default function Evaluate() {
+  const searchParams = useSearchParams();
+  const board = searchParams.get("board").split(",");
+  const companyName = searchParams.get("companyName");
+  const companyDescription = searchParams.get("companyDescription");
+  // const mailTemplate = searchParams.get("mailTemplate");
   const [allChats, setAllChats] = useState([
     {
       sender: "bot",
@@ -54,16 +60,19 @@ export default function Evaluate() {
       .classList.add("btn-disabled");
     const tempInputMessage = inputMessage;
     let answer = { sender: "bot", content: "" };
-    const api_res = await fetch(
-      `https://bizzgpt-production-7340.up.railway.app/predict`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ question: tempInputMessage }),
-      }
-    );
+    const api_res = await fetch(``, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        question: tempInputMessage,
+        companyName: companyName,
+        companyDescription: companyDescription,
+        // mailTemplate: mailTemplate,
+      }),
+    });
+
     const api_data = await api_res.json();
     answer.content = api_data.content;
     let temp_chats = allChats;

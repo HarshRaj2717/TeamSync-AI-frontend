@@ -67,7 +67,7 @@ const TypeWriter = () => {
         href=""
         className="typewrite text-blue-700"
         data-period="2000"
-        data-type='[ " Developer", " Writer", " Manager" ]'
+        data-type='[ " Company", " Developer", " Writer", " Manager" ]'
       >
         <span class="wrap"></span>
       </a>
